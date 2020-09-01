@@ -1,11 +1,6 @@
 ---
-- hosts: 127.0.0.1
+- hosts: localhost
   tasks:
-  - name: Install NGINX
-    apt:
-      name: nginx
-      state: latest
-  - name: Start NGINX Service
-    service:
-      name: nginx
-      state: started
+  - name: Ping localhost
+    ping:
+    
